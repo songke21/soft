@@ -1,0 +1,1 @@
+./install-coolfluid-deps.pl --install=petsc --int64=1 --install-petsc-dir=$opt_install_mpi_dir/petsc_optim_long --debug=0 --install-mpi-dir=$opt_install_mpi_dir
