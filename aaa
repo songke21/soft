@@ -1,1 +1,16 @@
-./install-coolfluid-deps.pl  --static=yes --genconf --envars --blaslapack-dir= --mpi-dir= --cmake-dir --install-dir=/RAID0/xuesheng/opt/coolfluid --dwnldsrc=https://github.com/songke21/soft
+--download-f2cblaslapack=/RAID0/xuesheng/build/f2cblaslapack-3.4.2.q3.tar.gz
+./install-coolfluid-deps.pl --static=yes --genconf --envars --blaslapack-dir=/RAID0/xuesheng/opt/lapack-3.7.1/lib --mpi-dir=/usr  --cmake-dir=/RAID0/xuesheng/opt/cmake-3.10.0 --install-dir=/RAID0/xuesheng/opt/coolfluid --install=curl,boost,petsc,parmetis
+
+
+
+coolfluid_dir = /RAID0/xuesheng/build/COOLFluiD-master/trunk/
+basebuild_dir = /RAID0/xuesheng/build/COOLFluiD-master/trunk/OpenMPI
+cc  = /usr/bin/mpicc
+cxx = /usr/bin/mpicxx
+fc  = /usr/bin/mpif90
+mpi_dir = /usr
+curl_dir      = /RAID0/xuesheng/opt/coolfluid
+boost_dir     = /RAID0/xuesheng/opt/coolfluid
+petsc_dir     = /RAID0/xuesheng/opt/coolfluid/petsc
+parmetis_dir  = /RAID0/xuesheng/opt/coolfluid
+
